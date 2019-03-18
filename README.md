@@ -1,34 +1,34 @@
-#Overview:
+# Overview:
 	Simple C/Python program for sending hamming code encoded chars
 	through UDP
 
 
-[![vidya](https://raw.githubusercontent.com/DavidoRotho/HammingSocketsExample/master/example.gif)](demo vid)
+[vidya](https://raw.githubusercontent.com/DavidoRotho/HammingSocketsExample/master/example.gif)](demo vid)
 	
 	
-#Files:
+# Files:
 	get.py - Python UDP Server
 	send.py - Qt4 Python Sender Tool
 	hamming.c - Source for `hamming_tool`
 	Makefile - What it says on the box
 
-#How to run:
-	##Requirements:
+# How to run:
+	## Requirements:
 		Python 3
 		A C compiler (gcc is recommended (STILL FASTEST))
 		Qt4
 		Python-Qt4
 		Make (optional)
-	##Tested on:
+	## Tested on:
 		Arch GNU/Linux
 			Linux mugi 4.9.6-1-ARCH #1 SMP PREEMPT Thu Jan 26 09:22:26 CET 2017 x86_64 GNU/Linux
 
 
-	##Quick Start:
+	## Quick Start:
 		If you can get to a bourne style shell
 		`make && ./get.py & ./send.py > /dev/null 2>&1 && killall get.py`
 
-	##Getting started:
+	## Getting started:
 		First, compile the hamming tool with either your C compiler or
 		the provided makefile
 
@@ -42,7 +42,7 @@
 
 
 
-	##Note:
+	## Note:
 		All the hamming work is done by the C `hamming_tool`, the python will
 		fail without it
 
